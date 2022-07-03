@@ -1,0 +1,18 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Gumball Tycoon", "Midnight")
+local Tab = Window:NewTab("Main Scripts")
+local Section = Tab:NewSection("Gumball Tycoon")
+Section:NewButton("Bypass Obby Lava", "Bypasses Obby Lava", function()
+    for i,v in pairs (workspace:GetDescendants()) do
+if v.Name == "Part" then
+v.CanTouch = false
+end
+end
+end)
+local Tab = Window:NewTab("Player Scripts")
+local Section = Tab:NewSection("Admin")
+Section:NewButton("Infinite Yield", "Gives Player Admin", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("! Cxxtched#5651")
